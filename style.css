@@ -24,3 +24,18 @@ a:focus-visible{outline:2px solid var(--lime);outline-offset:5px}
   .button-light{max-width:100%;overflow-wrap:anywhere}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Japanese headings and navigation */
+.main-nav,.header-contact,.eyebrow,.button,.art-caption,.scroll-note,.contact-meta,.site-footer{font-family:var(--body);letter-spacing:.04em}
+h1,h2{font-family:var(--body);letter-spacing:.02em;line-height:1.35}
+h1{font-size:clamp(42px,5.2vw,72px)}
+h1 em{font-weight:700}
+.section-heading h2{font-size:clamp(38px,4.5vw,60px)}
+.about-copy h2{font-size:clamp(36px,4vw,54px)}
+.contact h2{font-size:clamp(36px,4.5vw,62px)}
+.about-stamp span{font-family:var(--body);font-size:11px;letter-spacing:.04em;-webkit-text-stroke:0}
+@media(max-width:700px){
+  h1{font-size:clamp(36px,9vw,52px)}
+  .main-nav{gap:14px;margin-right:0}
+  .contact h2{font-size:clamp(30px,7.5vw,48px)}
+}
